@@ -11,9 +11,14 @@ public class SeleniumTest {
 
     @Test
     public void testGithubTitle() {
+        // настройка chrome driver
         WebDriverManager.chromedriver().setup();
+
+        // конфигурация запуска
         WebDriver driver = new ChromeDriver();
         driver.get("https://github.com");
+
+        // код выполнения теста
         String title = driver.getTitle();
         assertEquals(title, "GitHub: Where the world builds software · GitHub");
         driver.quit();

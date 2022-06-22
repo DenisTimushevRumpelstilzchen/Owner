@@ -16,5 +16,6 @@ public class SeleniumTest {
         driver.get("https://github.com");
         String title = driver.getTitle();
         assertEquals(title, "GitHub: Where the world builds software · GitHub");
+        driver.quit();
     }
 }

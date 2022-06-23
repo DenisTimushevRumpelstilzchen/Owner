@@ -7,6 +7,6 @@ public class WebDriverConfig {
     }
 
     public String getBaseUrl(){
-        return "https://testing.github.com/";
+        return "https://github.com/";
     }
 }
